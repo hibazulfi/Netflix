@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 200px;
+}
+
+.sign-in {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("netflix.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.email-box input {
+    width: 350px;
+    padding: 15px;
+    border: none;
+}
+
+.email-box button {
+    background: #e50914;
+    border: none;
+    padding: 15px 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.movies {
+    padding: 40px 50px;
+}
+
+.movies h2 {
+    margin: 20px 0;
+}
+
+.movie-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.movie-row::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-row img {
+    width: 200px;
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.movie-row img:hover {
+    transform: scale(1.15);
+}
+
+.plans {
+    padding: 60px 40px;
+    text-align: center;
+    border-top: 8px solid #222;
+}
+
+.plans h1 {
+    margin-bottom: 40px;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: #111;
+    padding: 30px;
+    width: 280px;
+    border-radius: 8px;
+}
+
+.plan h2 {
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #e50914;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.plan p {
+    margin: 8px 0;
+}
+
+.plan button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #e50914;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popular {
+    border: 2px solid #e50914;
+}
+
+footer {
+    border-top: 8px solid #222;
+    padding: 30px;
+    text-align: center;
+    color: #aaa;
+}
